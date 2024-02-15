@@ -132,8 +132,10 @@ def main():
             printTextWithoutinput("SIMULATING TTT GAME")
             sim = input("select ending : bad/good").lower()
             if sim == "bad":
-                printTextWithoutinput(f"{sn}Guess you'll need to change your pc.\n")
+                delay_print(f"{sn}Guess you'll need to change your pc.\n")
+                time.sleep(3)
                 os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+                client_socket.send("close".encode("utf-8"))
             else:
                 printTextWithoutinput(f"{sn}Okay I'll aknowledge you're not that dumb you can keep me.\n")
                 client_socket.send("close".encode("utf-8"))
