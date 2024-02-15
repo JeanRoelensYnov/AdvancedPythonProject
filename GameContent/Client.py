@@ -45,9 +45,12 @@ def main():
 
         # If server sent us "closed" in the payload, we break out of the loop and close our socket
         if response == "alert_1":
-            a = NotificationBuilder("Don't listen to him !\nHe's gonna hurt your computer")
+            a = NotificationBuilder("Don't listen to him !\nHe's gonna break your computer")
             a.show()
             client.send("alert_1 : done".encode("utf-8")[:1024])
+        if response == "riddleone":
+            a = NotificationBuilder("Okay just play along with him I'll try to help you.")
+            a.show()
         if response == "close":
             client.send("close".encode("utf-8")[:1024])
             break
