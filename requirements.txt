@@ -1,0 +1,9 @@
+win11toast
+winotify
+bs4
+requests
+numpy
+tensorflow
+keras
+pandas
+matplotlib
