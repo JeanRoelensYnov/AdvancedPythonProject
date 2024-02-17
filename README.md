@@ -1,6 +1,8 @@
 # Advanced Python Project
 
-What do you need : 
+**You are playing against your computer that turned evil ! Try to solve all its riddle to regain control over it. Fortunately, a mysterious ally is trying to help you.**
+
+## What do you need : 
 - Python 3.11 or older version
 - Libraries that can be found in requirements.txt
 
@@ -8,7 +10,7 @@ What do you need :
 
 If you wish to install a specific version of python you can choose the wanted version [here](https://www.python.org/downloads/).
 
-This program won't work with python version higher thant 3.11 for now !
+This program won't work with python version older or equal than 3.11 for now !
 
 ## How to install the libraries
 
