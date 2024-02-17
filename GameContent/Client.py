@@ -51,6 +51,16 @@ def main():
         if response == "riddleone":
             a = NotificationBuilder("Okay just play along with him I'll try to help you.")
             a.show()
+        if response == "encr3":
+            a = NotificationBuilder("Hey it looks like vigenere encryption !")
+            a.show()
+        if response == "encr5":
+            a = NotificationBuilder("The key must be something that you see since the beginning...\nSomething that's here right before you eye.")
+            a.show()
+        if response == "encr7":
+            a = NotificationBuilder("I got it ! By decrypting the riddle I found the answer 'Queue'")
+            a.show()
+
         if response == "close":
             client.send("close".encode("utf-8")[:1024])
             break
